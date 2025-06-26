@@ -7,19 +7,21 @@ const Notification = () => {
       <div className="text-sm text-gray-600 mb-2">Dashboard &gt; <span className="text-gray-800 font-medium">Settings</span></div>
       <h1 className="text-2xl font-semibold text-gray-900 mb-6">Settings</h1>
 
-      {/* Tabs */}
-      <div className="flex flex-wrap gap-4 border-b border-gray-300 mb-6">
-        {['User Profile', 'Notification Preferences', 'Display Settings', 'Integration Options'].map((tab, idx) => (
-          <button
-            key={idx}
-            className={`pb-2 border-b-2 text-sm font-medium ${idx === 1 ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-700 hover:text-gray-900'}`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
 
       <div className="bg-white rounded-lg shadow p-6 space-y-8">
+        {/* Tabs */}
+        <div className="flex flex-wrap gap-4 border-b border-gray-300 mb-6">
+          {['User Profile', 'Notification Preferences', 'Display Settings', 'Integration Options'].map((tab, idx) => (
+            <button
+              key={idx}
+              className={`pb-2 border-b-2 text-sm font-medium ${idx === 1 ? 'border-blue-600 text-blue-600' : 'border-transparent text-gray-700 hover:text-gray-900'}`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
+
+
         {/* Email Notifications */}
         <div>
           <h2 className="text-lg font-medium text-gray-900 mb-4">Email Notifications</h2>

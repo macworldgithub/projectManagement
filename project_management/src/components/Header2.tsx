@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FiSearch } from 'react-icons/fi';
 import { FaBell } from 'react-icons/fa';
 
-export default function Header() {
+export default function Header2() {
   return (
     <header className="w-full bg-white px-4 sm:px-6 py-3 flex items-center justify-between border-b">
       {/* Search */}

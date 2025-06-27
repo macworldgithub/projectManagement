@@ -1,8 +1,7 @@
-// // app/account/management/page.tsx
 "use client"; 
 import { useState } from 'react';
 export default function Information() {
-  const [activeTab, setActiveTab] = useState('Security');
+  const [activeTab, setActiveTab] = useState('Account Management');
 
   return (
     <div className="min-h-screen bg-gray-200 p-4 md:p-8">
@@ -10,19 +9,19 @@ export default function Information() {
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Account Settings</h1>
         <p className="text-gray-600 mb-8">Manage your account security, subscription, and billing information</p>
 
-        {/* Tabs */}
-        <div className="flex flex-wrap gap-2 md:gap-6 mb-8 border-b border-gray-200">
+          {/* Tabs */}
+         <div className="flex flex-wrap gap-2 md:gap-6 mb-8 border-b border-gray-200">
           {['Security', 'Subscription', 'Billing', 'Account Management'].map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 text-sm md:text-base font-medium rounded-t-lg transition-colors ${activeTab === tab ? 'bg-white text-blue-600 border-t border-l border-r border-gray-200' : 'text-gray-500 hover:text-gray-700'}`}
+              className={`pb-2 px-1 text-sm md:text-base ${activeTab.toLowerCase() === tab.toLowerCase() ? 'text-blue-600 border-b-2 border-blue-600 font-medium' : 'text-gray-500 hover:text-gray-700'}`}
+              onClick={() => setActiveTab(tab.toLowerCase())}
             >
               {tab}
             </button>
           ))}
-        </div>
-
+        </div> 
+        
         {/* Account Information Section */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <h2 className="text-xl font-semibold text-gray-800 mb-6">Account Information</h2>

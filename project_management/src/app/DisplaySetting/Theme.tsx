@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function DisplaySettings() {
+export default function Theme() {
   const [theme, setTheme] = useState('light');
   const [color, setColor] = useState('blue');
   const [fontSize, setFontSize] = useState(16);

@@ -4,6 +4,7 @@
 import { useState } from 'react';
 
 export default function Password() {
+
   const [activeTab, setActiveTab] = useState('security');
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -44,13 +45,13 @@ export default function Password() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
+    <div className="min-h-screen bg-gray-200 p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Account Settings</h1>
         <p className="text-gray-600 mb-6">Manage your account security, subscription, and billing information</p>
 
         {/* Tabs */}
-        <div className="flex flex-wrap gap-2 md:gap-6 mb-8 border-b border-gray-200">
+         <div className="flex flex-wrap gap-2 md:gap-6 mb-8 border-b border-gray-200">
           {['Security', 'Subscription', 'Billing', 'Account Management'].map((tab) => (
             <button
               key={tab}
@@ -60,7 +61,8 @@ export default function Password() {
               {tab}
             </button>
           ))}
-        </div>
+        </div> 
+        
 
         {/* Security Content */}
         {activeTab === 'security' && (

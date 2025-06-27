@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 
-export default function SecurityPage() {
+export default function ActiveSession() {
   const [notifications, setNotifications] = useState({
     newSignIn: true,
     suspiciousActivity: true,

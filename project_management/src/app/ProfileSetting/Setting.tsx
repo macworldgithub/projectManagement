@@ -1,5 +1,4 @@
 'use client';
-
 import React from 'react';
 import Image from 'next/image';
 
@@ -8,9 +7,6 @@ const Setting = () => {
     <div className="max-w-6xl mx-auto p-4 sm:p-6 md:p-8 bg-gray-200">
       <div className="text-sm text-gray-600 mb-2">Dashboard &gt; <span className="text-gray-800 font-medium">Settings</span></div>
       <h1 className="text-2xl font-semibold text-gray-900 mb-6">Settings</h1>
-
-    
-
       <div className="bg-white rounded-lg shadow p-6 space-y-8">
          {/* Tabs */}
         <div className="flex flex-wrap gap-4 border-b border-gray-300 mb-6">
@@ -27,7 +23,7 @@ const Setting = () => {
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex flex-col items-center gap-4">
             <Image
-              src="/profile.png"
+              src="/avatar.png"
               alt="Profile Picture"
               width={100}
               height={100}

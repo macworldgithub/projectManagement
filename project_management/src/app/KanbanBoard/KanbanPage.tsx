@@ -170,7 +170,7 @@ const board: Column[] = [
 
 export default function KanbanPage() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-200 text-black">
       {/* Header */}
       <div className="bg-white flex items-center justify-between px-6 py-4 border-b">
         <h1 className="text-xl font-semibold">Kanban Board</h1>

@@ -70,7 +70,7 @@ export default function ProjectsPage() {
     <div className="min-h-screen">
       {/* Header */}
       <div className="bg-white px-6 py-4 flex justify-between items-center border-b">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-black">
           <h1 className="text-2xl font-bold">Projects</h1>
           <span className="text-sm text-gray-500 mt-1 sm:mt-0">June 19, 2025</span>
         </div>
@@ -85,7 +85,7 @@ export default function ProjectsPage() {
 
       {/* Filters */}
       <div className="bg-gray-100 px-6 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
-        <div className="flex flex-wrap gap-3 items-center">
+        <div className="flex flex-wrap gap-3 items-center text-black">
           <input
             type="text"
             placeholder="Search projects..."
@@ -104,10 +104,10 @@ export default function ProjectsPage() {
           </select>
         </div>
         <div className="flex space-x-1">
-          <button className="p-2 border rounded-md bg-white hover:bg-gray-200">
+          <button className="p-2 border rounded-md bg-white hover:bg-gray-200 text-black">
             <FiGrid />
           </button>
-          <button className="p-2 border rounded-md bg-white hover:bg-gray-200">
+          <button className="p-2 border rounded-md bg-white hover:bg-gray-200 text-black">
             <FiList />
           </button>
           <button className="px-2 py-2 bg-blue-600 text-white rounded-md text-xs hover:bg-blue-700">

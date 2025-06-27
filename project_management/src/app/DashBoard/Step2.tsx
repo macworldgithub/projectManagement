@@ -8,7 +8,7 @@ const Step2 = () => {
   return (
     <div className="-mt-6 p-4 sm:p-6 md:p-8 bg-gray-200 space-y-4">
       {/* Top Section - Risk Alerts & Milestones */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 text-black">
         {/* Risk Alerts */}
         <div className="bg-white rounded-lg p-4 shadow">
           <div className="flex justify-between items-center mb-4">
@@ -35,7 +35,7 @@ const Step2 = () => {
         </div>
 
         {/* Upcoming Milestones */}
-        <div className="bg-white rounded-lg p-4 shadow">
+        <div className="bg-white rounded-lg p-4 shadow ">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-lg font-semibold">Upcoming Milestones</h2>
             <a href="#" className="text-sm text-blue-600 flex items-center gap-1">
@@ -72,7 +72,7 @@ const Step2 = () => {
       </div>
 
       {/* Bottom Section - Weekly Overview */}
-      <div className="bg-white rounded-lg p-4 shadow">
+      <div className="bg-white rounded-lg p-4 shadow text-black">
         <h2 className="text-lg font-semibold mb-4">Weekly Overview</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Task Completion - Pie Chart Placeholder */}

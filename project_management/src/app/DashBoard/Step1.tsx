@@ -19,7 +19,7 @@ const Step1 = () => {
   return (
     <div className="p-4 sm:p-6 md:p-8 bg-gray-200 min-h-screen">
       {/* Header */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center mb-6 text-black">
         <h1 className="text-lg sm:text-xl font-semibold">Dashboard <span className="text-gray-500 font-normal">June 2025</span></h1>
         <div className="flex items-center space-x-3">
           <div className="text-sm text-gray-600 text-right">
@@ -37,9 +37,9 @@ const Step1 = () => {
       </div>
 
       {/* Stat Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mb-6 text-black">
         {/* Card */}
-        <div className="bg-white p-4 rounded-lg shadow text-base">
+        <div className="bg-white p-4 rounded-lg shadow ">
           <div className="flex items-center justify-between text-sm text-gray-500">
             <span>Total Projects</span>
             <FaFolder className="text-blue-400" size={24} />
@@ -76,7 +76,7 @@ const Step1 = () => {
   </div>
 
       {/* Chart Section */}
-      <div className="bg-white p-4 rounded-lg shadow">
+      <div className="bg-white p-4 rounded-lg shadow text-black">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-semibold">Project Timeline Progress</h2>
           <div className="flex space-x-2">
